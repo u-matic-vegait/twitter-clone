@@ -1,0 +1,46 @@
+@import './../../../assets/styles/_variables.scss';
+
+.trends {
+  width: 400px;
+  background-color: $gray-100;
+  border-radius: $radius-16;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: $spacing-16 $spacing-8 $spacing-8 $spacing-8;
+
+  .header__title {
+    font-weight: bold;
+    font-size: $font-size-xl;
+  }
+
+  .header__settings-icon {
+    padding: $spacing-8;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+
+  .header__settings-icon:hover {
+    background-color: $gray-300;
+    cursor: pointer;
+  }
+}
+
+.footer {
+  border-bottom-left-radius: $radius-16;
+  border-bottom-right-radius: $radius-16;
+  padding: $spacing-16 $spacing-8;
+  transition: 0.3s;
+
+  .footer_text {
+    font-size: $font-size-md;
+    color: $primary-blue;
+  }
+}
+
+.footer:hover {
+  background-color: $gray-200;
+  cursor: pointer;
+}
