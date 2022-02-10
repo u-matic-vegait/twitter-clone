@@ -1,0 +1,45 @@
+@import './../../../assets/styles/_variables.scss';
+
+* {
+  font-family: $font-family-primary;
+}
+
+p {
+  margin: 0;
+}
+
+.trend {
+  display: flex;
+  justify-content: space-between;
+  transition: 0.3s;
+  padding: $spacing-8;
+
+  .trend__type,
+  .trend__numberOfTweets {
+    font-size: $font-size-sm;
+    color: $gray-500;
+    margin: $spacing-4 0;
+  }
+
+  .trend__name {
+    font-size: $font-size-lg;
+    font-weight: bold;
+  }
+
+  .trend__threeDotsIcon {
+    padding: $spacing-8;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+
+  .trend__threeDotsIcon:hover {
+    color: $primary-blue;
+    background-color: $light-blue;
+    cursor: pointer;
+  }
+}
+
+.trend:hover {
+  background-color: $gray-200;
+  cursor: pointer;
+}
