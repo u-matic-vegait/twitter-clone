@@ -1,20 +1,12 @@
 @import './../../../assets/styles/_variables.scss';
 
-* {
-  font-family: $font-family-primary;
-}
-
-p {
-  margin: 0;
-}
-
 .trend {
   display: flex;
   justify-content: space-between;
   transition: 0.3s;
-  padding: $spacing-8;
+  padding: $spacing-8 $spacing-16;
 
-  .trend__type,
+  .trend__category,
   .trend__numberOfTweets {
     font-size: $font-size-sm;
     color: $gray-500;

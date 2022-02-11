@@ -1,0 +1,14 @@
+@import './assets/styles/_variables.scss';
+
+* {
+  font-family: $font-family-primary;
+  // color: $font-color-primary;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
