@@ -1,30 +1,17 @@
 @import './../../../assets/styles/_variables.scss';
 
-.trends {
+.recommendedUsersToFollow {
   width: 400px;
   background-color: $gray-100;
   border-radius: $radius-16;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
   padding: $spacing-16 $spacing-16 $spacing-8 $spacing-16;
 
   .header__title {
     font-weight: $font-weight-bolder;
     font-size: $font-size-xl;
-  }
-
-  .header__settings-icon {
-    padding: $spacing-8;
-    border-radius: 50%;
-    transition: 0.3s;
-  }
-
-  .header__settings-icon:hover {
-    background-color: $gray-300;
-    cursor: pointer;
   }
 }
 
