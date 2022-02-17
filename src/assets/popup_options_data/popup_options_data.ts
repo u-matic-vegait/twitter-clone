@@ -1,0 +1,33 @@
+import { PopupOption } from '../../model/PopupOption'
+
+export const recommendedTrendsPopupOptions: PopupOption[] = [
+  { iconName: 'BsEmojiFrown', text: 'Not interested in this' },
+  { iconName: 'BsEmojiFrown', text: 'This trend is harmful or spammy' },
+]
+
+export const navbarMoreOptions: PopupOption[] = [
+  { iconName: 'BiMessageRoundedDetail', text: 'Topics' },
+  { iconName: 'BsLightning', text: 'Moments' },
+  { iconName: 'IoNewspaperOutline', text: 'Newsletters' },
+  { iconName: 'IoRocketOutline', text: 'Twitter for Professionals' },
+  { iconName: 'BsArrowUpRightSquare', text: 'Twitter Ads' },
+  { iconName: 'MdOutlineStackedBarChart', text: 'Analytics' },
+  { iconName: 'IoSettingsOutline', text: 'Settings and privacy' },
+  { iconName: 'IoHelpCircleOutline', text: 'Help Center' },
+  { iconName: 'MdOutlineBrush', text: 'Display' },
+  { iconName: 'IoMan', text: 'Keyboard shortcuts' },
+]
+
+export const tweetOptions: PopupOption[] = [
+  { iconName: 'BiMessageRoundedX', text: 'Unfollow Computer programming' },
+  { iconName: 'BsEmojiFrown', text: 'Not interested in this Tweet' },
+  { iconName: 'HiOutlineUserAdd', text: 'Follow @csaba_kissi' },
+  {
+    iconName: 'BiMessageRoundedAdd',
+    text: 'Add/remove @csaba_kissi from Lists',
+  },
+  { iconName: 'IoVolumeMuteOutline', text: 'Mute @csaba_kissi' },
+  { iconName: 'MdOutlineBlock', text: 'Block @csaba_kissi' },
+  { iconName: 'ImEmbed2', text: 'Embed Tweet' },
+  { iconName: 'BsFlag', text: 'Report Tweet' },
+]
