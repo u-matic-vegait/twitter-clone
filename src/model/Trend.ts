@@ -1,5 +1,5 @@
 export interface Trend {
-  type: string
+  category: string
   name: string
   numberOfTweets: number
 }

@@ -9,7 +9,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: $spacing-16 $spacing-8 $spacing-8 $spacing-8;
+  padding: $spacing-16 $spacing-16 $spacing-8 $spacing-16;
 
   .header__title {
     font-weight: bold;
@@ -31,7 +31,7 @@
 .footer {
   border-bottom-left-radius: $radius-16;
   border-bottom-right-radius: $radius-16;
-  padding: $spacing-16 $spacing-8;
+  padding: $spacing-16;
   transition: 0.3s;
 
   .footer_text {

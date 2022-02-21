@@ -14,7 +14,7 @@ export const TCRecommendedTrend: FunctionComponent<TCRecommendedTrendProps> = ({
   return (
     <div className='trend'>
       <div>
-        <p className='trend__type'> {trend.type} </p>
+        <p className='trend__category'> {trend.category} </p>
         <p className='trend__name'> {trend.name} </p>
         <p className='trend__numberOfTweets'>
           {numbro(trend.numberOfTweets).format({
