@@ -1,8 +1,8 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Explore } from '../pages/Explore';
-import { Home } from '../pages/Home';
-import { Login } from '../pages/Login';
-import { PrivateRoute } from './PrivateRoute';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Explore } from '../pages/Explore'
+import { Home } from '../pages/Home'
+import { Login } from '../pages/Login'
+import { PrivateRoute } from './PrivateRoute'
 
 export const Router = () => (
   <BrowserRouter>
@@ -19,4 +19,4 @@ export const Router = () => (
       <Route path='explore' element={<Explore />} />
     </Routes>
   </BrowserRouter>
-);
+)

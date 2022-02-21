@@ -1,7 +1,8 @@
 import { v4 as uuidv4 } from 'uuid'
 import { RecommendedUserToFollow } from '../model/RecommendedUserToFollow'
+import { Trend } from '../model/Trend'
 
-export const recommendedTrends = [
+export const recommendedTrends: Trend[] = [
   {
     category: 'Trending in Serbia',
     name: '#TikTok',
@@ -16,6 +17,16 @@ export const recommendedTrends = [
     category: 'Technology · Trending',
     name: 'Blockchain',
     numberOfTweets: 1500000,
+  },
+  {
+    category: 'Trending in Serbia',
+    name: 'Bosnia',
+    numberOfTweets: 2433,
+  },
+  {
+    category: 'Turkish series · Trending',
+    name: '#üçkuruş',
+    numberOfTweets: 104000,
   },
 ]
 

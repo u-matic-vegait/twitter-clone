@@ -1,0 +1,11 @@
+@import './../../../assets/styles/_variables.scss';
+
+.tc-button {
+  border: 0;
+  border-radius: $radius-32;
+  font-weight: $font-weight-bold;
+}
+
+.tc-button:hover {
+  cursor: pointer;
+}

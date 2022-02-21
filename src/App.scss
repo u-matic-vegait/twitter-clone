@@ -2,8 +2,14 @@
 
 * {
   font-family: $font-family-primary;
-  color: $font-color-primary;
+  // color: $font-color-primary;
+}
+
+body {
   margin: 0;
   padding: 0;
 }
 
+p {
+  margin: 0;
+}

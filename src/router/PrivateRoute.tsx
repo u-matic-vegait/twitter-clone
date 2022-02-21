@@ -12,5 +12,5 @@ export const PrivateRoute: FunctionComponent<PrivateRouteProps> = ({
 }) => {
   // CHECK IF USER IS AUTHENTICATED TO DO
   let isAuthenticated = true
-  return isAuthenticated ? children : <Navigate to={redirectTo} />
+  return isAuthenticated ? children : <Navigate to={redirectTo} replace />
 }

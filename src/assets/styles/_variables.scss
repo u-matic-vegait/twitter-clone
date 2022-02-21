@@ -17,6 +17,11 @@ $gray-100: #f8f8f8;
 $white: #ffffff;
 $black: #000000;
 
+:export {
+  primaryBlue: $primary-blue;
+  gray900: $gray-900;
+}
+
 /***********************************
 ************* SPACING **************
 ***********************************/
@@ -45,7 +50,7 @@ $font-color-primary: #0f1419;
 $font-size-sm: 12px;
 $font-size-md: 14px;
 $font-size-lg: 16px;
-$font-size-xl: 24px;
+$font-size-xl: 20px;
 $font-size-xxl: 32px;
 $font-size-xxxl: 48px;
 
