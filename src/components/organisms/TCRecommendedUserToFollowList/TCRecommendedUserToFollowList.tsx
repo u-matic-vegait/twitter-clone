@@ -15,9 +15,11 @@ export const TCRecommendedUsersToFollowlist: FunctionComponent<
       <div className='header'>
         <p className='header__title'> Who to follow </p>
       </div>
+
       {users.map((user) => (
-        <TCRecommendedUserToFollow user={user} key={user.tagName} />
+        <TCRecommendedUserToFollow user={user} key={user.userId} />
       ))}
+
       <div className='footer'>
         <p className='footer_text'>Show more</p>
       </div>
