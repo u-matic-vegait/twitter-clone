@@ -2,17 +2,18 @@
 
 .searchbar {
   display: flex;
-  width: 400px;
+  width: 100%;
   background-color: $search-bar;
-  margin-bottom: 50px;
   border-radius: $radius-32;
   font-size: $font-size-xl;
   border: 1px solid transparent;
   transition: 0.3s;
+  margin: $spacing-16 0;
 
   .searchbar__search-icon {
     color: $gray-700;
-    padding: $spacing-16;
+    width: 20px;
+    padding: $spacing-8 $spacing-16;
   }
 
   .searchbar__search-icon--active {

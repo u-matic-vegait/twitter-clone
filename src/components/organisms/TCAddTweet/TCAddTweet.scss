@@ -1,0 +1,82 @@
+@import './../../../assets/styles/_variables.scss';
+
+.at-wrapper {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  padding: $spacing-16;
+  column-gap: $spacing-16;
+  border-bottom: 1px solid $gray-200;
+}
+
+.at-wrapper__left {
+}
+
+.at-wrapper__left .profile_image {
+  border-radius: $radius-64;
+}
+
+.at-wrapper__right {
+  flex-grow: 1;
+
+  .at-wrapper__right-iconsAndButton {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .at-wrapper__right-iconsAndButton .iconsWrapper .icon {
+    width: 20px;
+    height: 20px;
+    padding: $spacing-8;
+
+    color: $primary-blue;
+    border-radius: $radius-32;
+    transition: 0.3s;
+  }
+
+  .at-wrapper__right-iconsAndButton .iconsWrapper .icon:hover {
+    background-color: $light-blue;
+    cursor: pointer;
+  }
+}
+
+.at-wrapper__right textarea {
+  margin: $spacing-16 0px;
+  width: 100%;
+  resize: none;
+  max-height: 200px;
+  padding: 0;
+  border: 0;
+  font-size: $font-size-xl;
+  font-weight: $font-weight-light;
+}
+
+.at-wrapper__right textarea:focus {
+  outline: none;
+}
+
+.whoCanReplyWrapper {
+  display: flex;
+  color: $primary-blue;
+  font-size: $font-size-md;
+  font-weight: $font-weight-bold;
+  border-bottom: 1px solid $gray-200;
+  padding-bottom: $spacing-16;
+  margin-bottom: $spacing-16;
+}
+
+.whoCanReply {
+  padding: $spacing-8;
+  border-radius: $radius-16;
+  transition: 0.3s;
+}
+
+.whoCanReply:hover {
+  background-color: $light-blue;
+  cursor: pointer;
+}
+
+.whoCanReply__icon,
+.whoCanReply__text {
+  vertical-align: middle;
+}

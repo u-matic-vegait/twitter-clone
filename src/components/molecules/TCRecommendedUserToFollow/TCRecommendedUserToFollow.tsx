@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react'
 import { RecommendedUserToFollow } from '../../../model/RecommendedUserToFollow'
+import { TCButton } from '../../atoms/TCButton/TCButton'
 import './TCRecommendedUserToFollow.scss'
 
 interface TCRecommendedUserToFollowProps {
@@ -23,9 +24,12 @@ export const TCRecommendedUserToFollow: FunctionComponent<
         </div>
       </div>
       <div className='recommendedUserToFollow__buttonWrapper'>
-        <button className='recommendedUserToFollow__buttonWrapper-button'>
-          Follow
-        </button>
+        <TCButton
+          text='Follow'
+          backgroundColor='#363636'
+          color='white'
+          padding='8px 16px'
+        />
       </div>
     </div>
   )
