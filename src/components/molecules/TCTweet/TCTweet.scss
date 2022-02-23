@@ -1,0 +1,184 @@
+@import './../../../assets/styles/_variables.scss';
+
+.tweet {
+  width: 100%;
+  border-bottom: 1px solid $gray-200;
+  font-size: $font-size-md;
+  transition: 0.3s;
+}
+
+.tweet:hover {
+  cursor: pointer;
+  background-color: $gray-100;
+}
+
+.tweet__category {
+  padding: $spacing-16 0 $spacing-8 $spacing-32;
+  color: $gray-500;
+  font-weight: bold;
+  font-size: $font-size-md;
+}
+
+.tweet__category-name:hover {
+  text-decoration: underline;
+}
+
+.tweet__category-seeMoreLink {
+  color: $primary-blue;
+  text-decoration: none;
+}
+
+.tweet__category-seeMoreLink:hover {
+  text-decoration: underline;
+}
+
+.tweet__category-icon {
+  margin: 0px 10px;
+  vertical-align: middle;
+}
+
+.tweet__data {
+  display: flex;
+}
+
+.tweet__data-user_profile_image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0 $spacing-16;
+}
+
+.tweet__data-userData {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tweet__data-userData-name {
+  font-weight: bold;
+  margin-right: $spacing-8;
+}
+
+.tweet__data-userData-name:hover {
+  text-decoration: underline;
+}
+
+.tweet__data-userData-username,
+.tweet__data-userData-time {
+  color: $gray-700;
+}
+
+.tweet__data-userData-time:hover {
+  text-decoration: underline;
+}
+
+.tweet__data-userData-optionsIcon {
+  color: $gray-700;
+  vertical-align: middle;
+  padding: $spacing-8;
+  margin-right: $spacing-8;
+  border-radius: $radius-32;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.tweet__data-userData-optionsIcon:hover {
+  color: $primary-blue;
+  background-color: $light-blue;
+}
+
+.tweet__data-userDataAndText {
+  flex-grow: 1;
+}
+
+.tweet__data-text {
+  line-height: 22px;
+  margin-right: $spacing-16;
+}
+
+.tweet_bottomIcons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+  color: $gray-700;
+}
+
+.tweet_bottomIconWrapper {
+  cursor: pointer;
+}
+
+.tweet_bottomIconWrapper * {
+  vertical-align: middle;
+}
+
+.tweet_bottomIcons-number {
+  font-size: $font-size-md;
+}
+
+// ----------------------------------------
+.tweet_bottomIcons-BiMessageRounded {
+  padding: $spacing-8;
+  border-radius: $radius-32;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.iconAndNum-BiMessageRounded:hover .tweet_bottomIcons-BiMessageRounded {
+  color: $primary-blue;
+  background-color: $light-blue;
+}
+
+.iconAndNum-BiMessageRounded:hover {
+  color: $primary-blue;
+}
+//----------------------------------------
+
+// ----------------------------------------
+.tweet_bottomIcons-AiOutlineRetweet {
+  padding: $spacing-8;
+  border-radius: $radius-32;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.iconAndNum-AiOutlineRetweet:hover .tweet_bottomIcons-AiOutlineRetweet {
+  color: $green-retweet;
+  background-color: $green-retweet-light;
+}
+
+.iconAndNum-AiOutlineRetweet:hover {
+  color: $green-retweet;
+}
+//----------------------------------------
+
+// ----------------------------------------
+.tweet_bottomIcons-AiOutlineHeart {
+  padding: $spacing-8;
+  border-radius: $radius-32;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.iconAndNum-AiOutlineHeart:hover .tweet_bottomIcons-AiOutlineHeart {
+  color: $pink-like;
+  background-color: $pink-like-light;
+}
+
+.iconAndNum-AiOutlineHeart:hover {
+  color: $pink-like;
+}
+//----------------------------------------
+
+//----------------------------------------
+.tweet_bottomIcons-BsUpload {
+  padding: $spacing-8;
+  border-radius: $radius-32;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.tweet_bottomIcons-BsUpload:hover {
+  color: $primary-blue;
+  background-color: $light-blue;
+}
+//----------------------------------------

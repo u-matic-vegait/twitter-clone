@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from 'uuid'
 import { RecommendedUserToFollow } from '../model/RecommendedUserToFollow'
 import { Trend } from '../model/Trend'
+import { Tweet } from '../model/Tweet'
 
 export const recommendedTrends: Trend[] = [
   {
@@ -51,5 +52,58 @@ export const recommendedUsers: RecommendedUserToFollow[] = [
       'https://pbs.twimg.com/profile_images/1241360180438237184/7Ma-Rzqq_400x400.jpg',
     fullName: 'Saša Janković',
     tagName: 'sasajankovic',
+  },
+]
+
+export const tweets: Tweet[] = [
+  {
+    id: uuidv4(),
+    categoryName: 'Computer programming',
+    userProfileImageUrl:
+      'https://pbs.twimg.com/profile_images/1478902154245115908/kELI9gZD_400x400.jpg',
+    userFullName: 'Michelle Bakels',
+    userUsername: '@MichelleBakels',
+    time: 13,
+    content:
+      'Web3 companies looking for React developers, we have vetted React developers 🚀',
+    replyNumber: 24,
+    retweetNumber: 14,
+    likeNumber: 257,
+  },
+  {
+    id: uuidv4(),
+    categoryName: 'Open source',
+    userProfileImageUrl:
+      'https://pbs.twimg.com/profile_images/1296788415220985857/PdN6mQU0_400x400.jpg',
+    userFullName: 'Eddie Jaoude | GitHub Star',
+    userUsername: '@eddiejaoude',
+    time: 17,
+    content: `Q. What do you think has more value?
+
+      3 years of ______
+      ➡️ 1. a degree
+      ➡️ 2. of open source experience
+      
+      Let me know below...`,
+    replyNumber: 124,
+    retweetNumber: 16,
+    likeNumber: 227,
+  },
+  {
+    id: uuidv4(),
+    categoryName: 'Computer programming',
+    userProfileImageUrl:
+      'https://pbs.twimg.com/profile_images/1453064439444303872/64Mmkkg9_400x400.jpg',
+    userFullName: 'Dan ',
+    userUsername: '@khazifire',
+    time: 8,
+    content: `The design field is big and is always evolving. If you want to stay ahead of the game, you need to stay updated.
+
+    Reading blogs will help you learn from others and avoid repeating the mistakes they might have made 😌
+    
+    Here are 12 UI/UX Design blogs you can explore 🧵👇`,
+    replyNumber: 9,
+    retweetNumber: 63,
+    likeNumber: 207,
   },
 ]

@@ -18,10 +18,14 @@ export const TCRecommendedTrend: FunctionComponent<TCRecommendedTrendProps> = ({
           <p className='trend__category'> {trend.category} </p>
           <p className='trend__name'> {trend.name} </p>
           <p className='trend__numberOfTweets'>
-            {numbro(trend.numberOfTweets).format({
-              average: true,
-              totalLength: 2,
-            })}{' '}
+            {trend.numberOfTweets > 10000
+              ? numbro(trend.numberOfTweets).format({
+                  average: true,
+                  totalLength: 2,
+                })
+              : numbro(trend.numberOfTweets).format({
+                  thousandSeparated: true,
+                })}{' '}
             Tweets
           </p>
         </div>
