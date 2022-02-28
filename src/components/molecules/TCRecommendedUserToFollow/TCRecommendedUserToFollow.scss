@@ -1,0 +1,46 @@
+@import './../../../assets/styles/_variables.scss';
+
+.tc-recommended-user-to-follow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.tc-recommended-user-to-follow:hover {
+  background-color: $gray-200;
+  cursor: pointer;
+}
+
+.tc-recommended-user-to-follow__content {
+  display: flex;
+  align-items: center;
+}
+
+.tc-recommended-user-to-follow__content__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.tc-recommended-user-to-follow__content__info__name {
+  font-weight: $font-weight-bold;
+}
+
+.tc-recommended-user-to-follow__content__info__name:hover {
+  text-decoration: underline;
+}
+
+.tc-recommended-user-to-follow__content__info__tag {
+  color: $gray-500;
+}
+
+.tc-recommended-user-to-follow__content__avatar__image {
+  width: 50px;
+  height: 50px;
+  border-radius: $radius-64;
+  padding: $spacing-16;
+}
+
+.tc-recommended-user-to-follow__options {
+  padding: $spacing-16;
+}

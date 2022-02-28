@@ -1,0 +1,87 @@
+@import './../../../assets/styles/_variables.scss';
+
+.tc-add-tweet {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  padding: $spacing-16;
+  column-gap: $spacing-16;
+  border-bottom: 1px solid $gray-200;
+}
+
+.tc-add-tweet__avatar__image {
+  border-radius: $radius-64;
+}
+
+.tc-add-tweet__input {
+  flex-grow: 1;
+}
+
+.tc-add-tweet__input__options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tc-add-tweet__input__options__input-types__icon-wrapper {
+  display: inline-block;
+  border-radius: 32px;
+  transition: 0.3s;
+}
+
+.tc-add-tweet__input__options__input-types__icon-wrapper:hover {
+  background-color: $light-blue;
+  cursor: pointer;
+}
+
+.tc-add-tweet__input__options__input-types__icon {
+  width: 20px;
+  height: 20px;
+  padding: $spacing-8;
+  color: $primary-blue !important;
+
+  svg {
+    color: inherit;
+  }
+}
+
+.tc-add-tweet__input textarea {
+  margin: $spacing-16 0px;
+  width: 100%;
+  resize: none;
+  max-height: 200px;
+  padding: 0;
+  border: 0;
+  font-size: $font-size-xl;
+  font-weight: $font-weight-light;
+}
+
+.tc-add-tweet__input textarea:focus {
+  outline: none;
+}
+
+.tc-add-tweet__input__privacy {
+  display: flex;
+  color: $primary-blue;
+  font-size: $font-size-md;
+  font-weight: $font-weight-bold;
+  border-bottom: 1px solid $gray-200;
+  padding-bottom: $spacing-16;
+  margin-bottom: $spacing-16;
+}
+
+.tc-add-tweet__input__privacy__who-can-reply {
+  padding: $spacing-8;
+  border-radius: $radius-16;
+  transition: 0.3s;
+}
+
+.tc-add-tweet__input__privacy__who-can-reply:hover {
+  background-color: $light-blue;
+  cursor: pointer;
+}
+
+.tc-add-tweet__input__privacy__who-can-reply__icon,
+.tc-add-tweet__input__privacy__who-can-reply__text {
+  vertical-align: middle;
+  padding: $spacing-2;
+}

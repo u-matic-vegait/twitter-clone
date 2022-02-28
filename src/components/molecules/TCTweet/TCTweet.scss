@@ -1,0 +1,194 @@
+@import './../../../assets/styles/_variables.scss';
+
+.tc-tweet {
+  width: 100%;
+  border-bottom: 1px solid $gray-200;
+  font-size: $font-size-md;
+  transition: 0.3s;
+}
+
+.tc-tweet:hover {
+  cursor: pointer;
+  background-color: $gray-100;
+}
+
+.tc-tweet__category {
+  padding: $spacing-16 0 $spacing-8 $spacing-32;
+  color: $gray-500;
+  font-weight: bold;
+  font-size: $font-size-md;
+}
+
+.tc-tweet__category__name:hover {
+  text-decoration: underline;
+}
+
+.tc-tweet__category__see-more-link {
+  color: $primary-blue;
+  text-decoration: none;
+}
+
+.tc-tweet__category__see-more-link:hover {
+  text-decoration: underline;
+}
+
+.tc-tweet__category__icon {
+  margin: 0px 10px;
+  vertical-align: middle;
+}
+
+.tc-tweet__data {
+  display: flex;
+}
+
+.tc-tweet__data__user-profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0 $spacing-16;
+}
+
+.tc-tweet__data__user-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tc-tweet__data__user-data__name {
+  font-weight: bold;
+  margin-right: $spacing-8;
+}
+
+.tc-tweet__data__user-data__name:hover {
+  text-decoration: underline;
+}
+
+.tc-tweet__data__user-data__username,
+.tc-tweet__data__user-data__time {
+  color: $gray-700;
+}
+
+.tc-tweet__data__user-data__time:hover {
+  text-decoration: underline;
+}
+
+.tc-tweet__data-user-data__options-icon {
+  color: $gray-700;
+  vertical-align: middle;
+  padding: $spacing-8;
+  margin-right: $spacing-8;
+  border-radius: $radius-32;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.tc-tweet__data-user-data__options-icon:hover {
+  color: $primary-blue;
+  background-color: $light-blue;
+}
+
+.tc-tweet__data__user-data-and-tweet-text {
+  flex-grow: 1;
+}
+
+.tc-tweet__data__user-data-and-tweet-text__tweet-text {
+  line-height: 22px;
+  margin-right: $spacing-16;
+}
+
+.tc-tweet__bottom-icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+  color: $gray-700;
+}
+
+.tc-tweet__bottom-icons__icon-wrapper {
+  cursor: pointer;
+  border-radius: $radius-32;
+
+  &:hover {
+  }
+}
+
+.tc-tweet__bottom-icons__icon-wrapper * {
+  vertical-align: middle;
+}
+
+.tc-tweet__bottom-icons__icon-wrapper__number {
+  font-size: $font-size-md;
+}
+
+// ----------------------------------------
+.tc-tweet__bottom-icons__icon-and-num-reply__reply-icon {
+  padding: $spacing-8;
+  border-radius: $radius-32;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.tc-tweet__bottom-icons__icon-and-num-reply:hover
+  .tc-tweet__bottom-icons__icon-and-num-reply__reply-icon {
+  color: $primary-blue;
+  background-color: $light-blue;
+}
+
+.tc-tweet__bottom-icons__icon-and-num-reply:hover {
+  color: $primary-blue;
+}
+//----------------------------------------
+
+// ----------------------------------------
+.tc-tweet__bottom-icons__icon-and-num-reply__retweet-icon {
+  padding: $spacing-8;
+  border-radius: $radius-32;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.tc-tweet__bottom-icons__icon-and-num-retweet:hover
+  .tc-tweet__bottom-icons__icon-and-num-reply__retweet-icon {
+  color: $green-retweet;
+  background-color: $green-retweet-light;
+}
+
+.tc-tweet__bottom-icons__icon-and-num-retweet:hover {
+  color: $green-retweet;
+}
+//----------------------------------------
+
+// ----------------------------------------
+.tc-tweet__bottom-icons__icon-and-num-reply__like-icon {
+  padding: $spacing-8;
+  border-radius: $radius-32;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.tc-tweet__bottom-icons__icon-and-num-like:hover
+  .tc-tweet__bottom-icons__icon-and-num-reply__like-icon {
+  color: $pink-like;
+  background-color: $pink-like-light;
+}
+
+.tc-tweet__bottom-icons__icon-and-num-like:hover {
+  color: $pink-like;
+}
+//----------------------------------------
+
+//----------------------------------------
+.tc-tweet__bottom-icons__icon-wrapper-share:hover {
+  background-color: $light-blue;
+  border-radius: $radius-32;
+}
+
+.tc-tweet__bottom-icons__icon-and-num-reply__share-icon {
+  padding: $spacing-8;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.tc-tweet__bottom-icons__icon-and-num-reply__share-icon:hover {
+  color: $primary-blue;
+}
+//----------------------------------------

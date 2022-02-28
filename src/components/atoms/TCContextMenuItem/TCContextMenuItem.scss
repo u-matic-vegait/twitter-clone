@@ -1,0 +1,24 @@
+@import './../../../assets/styles/_variables.scss';
+
+.tc-context-menu-item {
+  padding: $spacing-8;
+  display: flex;
+  align-items: center;
+}
+
+.tc-context-menu-item:hover {
+  background-color: $gray-100;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.tc-context-menu-item__image {
+  padding: $spacing-8;
+  width: 20px;
+}
+
+.tc-context-menu-item__text {
+  flex-grow: 1;
+  padding: $spacing-8;
+  font-weight: $font-weight-normal;
+}

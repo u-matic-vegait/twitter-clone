@@ -1,0 +1,37 @@
+@import './../../../assets/styles/_variables.scss';
+
+.tc-trend {
+  display: flex;
+  justify-content: space-between;
+  transition: 0.3s;
+  padding: $spacing-8 $spacing-16;
+}
+
+.tc-trend:hover {
+  background-color: $gray-200;
+  cursor: pointer;
+}
+
+.tc-trend__content__category,
+.tc-trend__content__number-of-tweets {
+  font-size: $font-size-sm;
+  color: $gray-500;
+  margin: $spacing-4 0;
+}
+
+.tc-trend__content__name {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-bold;
+}
+
+.tc-trend__options__more {
+  padding: $spacing-8;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.tc-trend__options__more:hover {
+  color: $primary-blue;
+  background-color: $light-blue;
+  cursor: pointer;
+}
