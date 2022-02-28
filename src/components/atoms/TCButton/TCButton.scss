@@ -6,6 +6,31 @@
   font-weight: $font-weight-bold;
 }
 
+.tc-button--primary {
+  background-color: $primary-blue;
+  color: $white;
+}
+
+.tc-button--secondary {
+  background-color: $gray-900;
+  color: $white;
+}
+
+.tc-button--sm {
+  padding: $spacing-8 $spacing-16;
+  font-size: $font-size-md;
+}
+
+.tc-button--md {
+  padding: $spacing-8 $spacing-16;
+  font-size: $font-size-lg;
+}
+
+.tc-button--lg {
+  padding: $spacing-16 $spacing-32;
+  font-size: $font-size-xl;
+}
+
 .tc-button:hover {
   cursor: pointer;
 }

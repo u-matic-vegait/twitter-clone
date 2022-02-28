@@ -2,10 +2,10 @@ import './TCRecommendedTrend.scss'
 import { FunctionComponent } from 'react'
 import { HiDotsHorizontal } from 'react-icons/hi'
 import numbro from 'numbro'
-import { Trend } from '../../../model/Trend'
+import { TrendModel } from '../../../model/TrendModel'
 
 interface TCRecommendedTrendProps {
-  trend: Trend
+  trend: TrendModel
 }
 
 export const TCRecommendedTrend: FunctionComponent<TCRecommendedTrendProps> = ({
@@ -13,20 +13,24 @@ export const TCRecommendedTrend: FunctionComponent<TCRecommendedTrendProps> = ({
 }) => {
   return (
     <>
-      <div className='trend'>
-        <div>
-          <p className='trend__category'> {trend.category} </p>
-          <p className='trend__name'> {trend.name} </p>
-          <p className='trend__numberOfTweets'>
-            {numbro(trend.numberOfTweets).format({
-              average: true,
-              totalLength: 2,
-            })}{' '}
+      <div className='tc-trend'>
+        <div className='tc-trend__content'>
+          <p className='tc-trend__content__category'> {trend.category} </p>
+          <p className='tc-trend__content__name'> {trend.name} </p>
+          <p className='tc-trend__content__number-of-tweets'>
+            {trend.numberOfTweets > 10000
+              ? numbro(trend.numberOfTweets).format({
+                  average: true,
+                  totalLength: 2,
+                })
+              : numbro(trend.numberOfTweets).format({
+                  thousandSeparated: true,
+                })}{' '}
             Tweets
           </p>
         </div>
-        <div>
-          <HiDotsHorizontal className='trend__threeDotsIcon' />
+        <div className='tc-trend__options'>
+          <HiDotsHorizontal className='tc-trend__options__more' />
         </div>
       </div>
     </>

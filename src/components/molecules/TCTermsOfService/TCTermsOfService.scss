@@ -1,27 +1,25 @@
 @import './../../../assets/styles/_variables.scss';
 
-.tos-wrapper {
+.tc-terms-of-service {
   width: 100%;
   line-height: 20px;
-
-  .tos-wrapper__item--link,
-  .tos-wrapper__item,
-  .tos-wrapper__item--showMore {
-    text-decoration: none;
-    margin: $spacing-8;
-  }
-
-  .tos-wrapper__item--link:hover {
-    text-decoration: underline;
-  }
-
-  .tos-wrapper__item--showMore:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
 }
 
-.tos-wrapper * {
+.tc-terms-of-service * {
   font-size: $font-size-sm;
   color: $gray-500;
+}
+
+.tc-terms-of-service__link,
+.tc-terms-of-service__item {
+  text-decoration: none;
+  margin: 0px $spacing-8;
+  display: inline-block;
+}
+
+.tc-terms-of-service__item:hover {
+}
+
+.tc-terms-of-service__link:hover {
+  text-decoration: underline;
 }

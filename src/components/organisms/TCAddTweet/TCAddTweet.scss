@@ -1,6 +1,6 @@
 @import './../../../assets/styles/_variables.scss';
 
-.at-wrapper {
+.tc-add-tweet {
   display: flex;
   width: 100%;
   box-sizing: border-box;
@@ -9,38 +9,42 @@
   border-bottom: 1px solid $gray-200;
 }
 
-.at-wrapper__left {
-}
-
-.at-wrapper__left .profile_image {
+.tc-add-tweet__avatar__image {
   border-radius: $radius-64;
 }
 
-.at-wrapper__right {
+.tc-add-tweet__input {
   flex-grow: 1;
+}
 
-  .at-wrapper__right-iconsAndButton {
-    display: flex;
-    justify-content: space-between;
-  }
+.tc-add-tweet__input__options {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .at-wrapper__right-iconsAndButton .iconsWrapper .icon {
-    width: 20px;
-    height: 20px;
-    padding: $spacing-8;
+.tc-add-tweet__input__options__input-types__icon-wrapper {
+  display: inline-block;
+  border-radius: 32px;
+  transition: 0.3s;
+}
 
-    color: $primary-blue;
-    border-radius: $radius-32;
-    transition: 0.3s;
-  }
+.tc-add-tweet__input__options__input-types__icon-wrapper:hover {
+  background-color: $light-blue;
+  cursor: pointer;
+}
 
-  .at-wrapper__right-iconsAndButton .iconsWrapper .icon:hover {
-    background-color: $light-blue;
-    cursor: pointer;
+.tc-add-tweet__input__options__input-types__icon {
+  width: 20px;
+  height: 20px;
+  padding: $spacing-8;
+  color: $primary-blue !important;
+
+  svg {
+    color: inherit;
   }
 }
 
-.at-wrapper__right textarea {
+.tc-add-tweet__input textarea {
   margin: $spacing-16 0px;
   width: 100%;
   resize: none;
@@ -51,11 +55,11 @@
   font-weight: $font-weight-light;
 }
 
-.at-wrapper__right textarea:focus {
+.tc-add-tweet__input textarea:focus {
   outline: none;
 }
 
-.whoCanReplyWrapper {
+.tc-add-tweet__input__privacy {
   display: flex;
   color: $primary-blue;
   font-size: $font-size-md;
@@ -65,18 +69,19 @@
   margin-bottom: $spacing-16;
 }
 
-.whoCanReply {
+.tc-add-tweet__input__privacy__who-can-reply {
   padding: $spacing-8;
   border-radius: $radius-16;
   transition: 0.3s;
 }
 
-.whoCanReply:hover {
+.tc-add-tweet__input__privacy__who-can-reply:hover {
   background-color: $light-blue;
   cursor: pointer;
 }
 
-.whoCanReply__icon,
-.whoCanReply__text {
+.tc-add-tweet__input__privacy__who-can-reply__icon,
+.tc-add-tweet__input__privacy__who-can-reply__text {
   vertical-align: middle;
+  padding: $spacing-2;
 }

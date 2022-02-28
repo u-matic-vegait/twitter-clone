@@ -8,24 +8,28 @@ export const TCSearchbar = () => {
 
   return (
     <div
-      className={inputFocused ? 'searchbar searchbar--active' : 'searchbar'}
+      className={
+        inputFocused ? 'tc-searchbar tc-searchbar--active' : 'tc-searchbar'
+      }
       onClick={() => searchbarInputRef.current?.focus()}
     >
-      <RiSearchLine
-        className={
-          inputFocused
-            ? 'searchbar__search-icon searchbar__search-icon--active'
-            : 'searchbar__search-icon'
-        }
-      />
-      <input
-        onBlur={() => setInputFocused(false)}
-        onFocus={() => setInputFocused(true)}
-        ref={searchbarInputRef}
-        type='text'
-        placeholder='Search Twitter'
-        className='searchbar__input'
-      />
+      <span className='tc-searchbar__icon'>
+        <RiSearchLine
+          className={`tc-searchbar__icon__svg
+          ${inputFocused ? 'tc-searchbar__icon__svg--active' : ''}`}
+        />
+      </span>
+
+      <span className='tc-searchbar__input'>
+        <input
+          onBlur={() => setInputFocused(false)}
+          onFocus={() => setInputFocused(true)}
+          ref={searchbarInputRef}
+          type='text'
+          placeholder='Search Twitter'
+          className='tc-searchbar__input__field'
+        />
+      </span>
     </div>
   )
 }

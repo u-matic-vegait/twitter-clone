@@ -1,6 +1,6 @@
 @import './../../../assets/styles/_variables.scss';
 
-.searchbar {
+.tc-searchbar {
   display: flex;
   width: 100%;
   background-color: $search-bar;
@@ -9,28 +9,38 @@
   border: 1px solid transparent;
   transition: 0.3s;
   margin: $spacing-16 0;
-
-  .searchbar__search-icon {
-    color: $gray-700;
-    width: 20px;
-    padding: $spacing-8 $spacing-16;
-  }
-
-  .searchbar__search-icon--active {
-    color: $primary-blue;
-  }
-
-  .searchbar__input {
-    background-color: transparent;
-    border: 0;
-    flex-grow: 1;
-    font-size: $font-size-lg;
-    outline: none;
-  }
 }
 
-.searchbar--active {
+.tc-searchbar--active {
   border: 1px solid $primary-blue;
   color: $primary-blue;
   background-color: transparent;
+}
+
+.tc-searchbar__icon {
+  display: flex;
+}
+
+.tc-searchbar__icon__svg {
+  color: $gray-700;
+  width: 20px;
+  padding: $spacing-8 $spacing-16;
+}
+
+.tc-searchbar__icon__svg--active {
+  color: $primary-blue;
+}
+
+.tc-searchbar__input {
+  flex-grow: 1;
+}
+
+.tc-searchbar__input__field {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: $font-size-lg;
+  outline: none;
 }

@@ -1,49 +1,51 @@
 @import './../../../assets/styles/_variables.scss';
 
-.trends {
+.tc-recommended-trends-list {
   width: 100%;
   background-color: $gray-100;
   border-radius: $radius-16;
   margin-bottom: $spacing-16;
 }
 
-.header {
+.tc-recommended-trends-list__header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: $spacing-16 $spacing-16 $spacing-8 $spacing-16;
-
-  .header__title {
-    font-weight: $font-weight-bolder;
-    font-size: $font-size-xl;
-  }
-
-  .header__settings-icon {
-    padding: $spacing-8;
-    border-radius: 50%;
-    transition: 0.3s;
-    width: 20px;
-    height: 20px;
-  }
-
-  .header__settings-icon:hover {
-    background-color: $gray-300;
-    cursor: pointer;
-  }
 }
 
-.footer {
+.tc-recommended-trends-list__header__title {
+  font-weight: $font-weight-bolder;
+  font-size: $font-size-xl;
+  margin: 0;
+}
+
+.tc-recommended-trends-list__header__settings-icon {
+  padding: $spacing-8;
+  border-radius: 50%;
+  transition: 0.3s;
+  width: 20px;
+  height: 20px;
+}
+
+.tc-recommended-trends-list__header__settings-icon:hover {
+  background-color: $gray-300;
+  cursor: pointer;
+}
+
+.tc-recommended-trends-list__options {
   border-bottom-left-radius: $radius-16;
   border-bottom-right-radius: $radius-16;
   padding: $spacing-16;
   transition: 0.3s;
-
-  .footer_text {
-    font-size: $font-size-md;
-    color: $primary-blue;
-  }
 }
 
-.footer:hover {
+.tc-recommended-trends-list__options:hover {
   background-color: $gray-200;
   cursor: pointer;
+}
+
+.tc-recommended-trends-list__options__text {
+  font-size: $font-size-md;
+  color: $primary-blue;
 }

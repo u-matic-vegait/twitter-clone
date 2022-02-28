@@ -2,7 +2,12 @@
 
 * {
   font-family: $font-family-primary;
-  // color: $font-color-primary;
+}
+
+p,
+h1,
+a {
+  color: $font-color-primary;
 }
 
 body {

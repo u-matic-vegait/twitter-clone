@@ -3,29 +3,28 @@ import { FunctionComponent } from 'react'
 
 interface TCButtonProps {
   text: string
-  color?: string
-  backgroundColor?: string
-  padding?: string
-  fontSize?: string
+  type?: TCButtonType
+  size?: TCButtonSize
+}
+
+export enum TCButtonType {
+  PRIMARY = 'primary',
+  SECONDARY = 'secondary',
+}
+
+export enum TCButtonSize {
+  SM = 'sm',
+  MD = 'md',
+  LG = 'lg',
 }
 
 export const TCButton: FunctionComponent<TCButtonProps> = ({
   text,
-  color,
-  backgroundColor,
-  padding,
-  fontSize,
+  type,
+  size,
 }) => {
   return (
-    <button
-      className='tc-button'
-      style={{
-        color: color,
-        backgroundColor: backgroundColor,
-        padding: padding,
-        fontSize: fontSize,
-      }}
-    >
+    <button className={`tc-button tc-button--${type} tc-button--${size}`}>
       {text}
     </button>
   )

@@ -2,26 +2,30 @@ import './TCRecommendedTrendsList.scss'
 import { FunctionComponent } from 'react'
 import { TCRecommendedTrend } from '../../molecules/TCRecommendedTrend/TCRecommendedTrend'
 import { IoSettingsOutline } from 'react-icons/io5'
-import { Trend } from '../../../model/Trend'
+import { TrendModel } from '../../../model/TrendModel'
 
 interface TCRecommendedTrendListProps {
-  trends: Trend[]
+  trends: TrendModel[]
 }
 
 export const TCRecommendedTrendList: FunctionComponent<
   TCRecommendedTrendListProps
 > = ({ trends }) => {
   return (
-    <div className='trends'>
-      <div className='header'>
-        <p className='header__title'> Trends for you </p>
-        <IoSettingsOutline className='header__settings-icon' />
+    <div className='tc-recommended-trends-list'>
+      <div className='tc-recommended-trends-list__header'>
+        <h1 className='tc-recommended-trends-list__header__title'>
+          Trends for you
+        </h1>
+        <IoSettingsOutline className='tc-recommended-trends-list__header__settings-icon' />
       </div>
-      {trends.map((trend) => (
-        <TCRecommendedTrend trend={trend} key={trend.name} />
-      ))}
-      <div className='footer'>
-        <p className='footer_text'>Show more</p>
+      <div className='tc-recommended-trends-list__trends'>
+        {trends.map((trend) => (
+          <TCRecommendedTrend trend={trend} key={trend.name} />
+        ))}
+      </div>
+      <div className='tc-recommended-trends-list__options'>
+        <p className='tc-recommended-trends-list__options__text'>Show more</p>
       </div>
     </div>
   )

@@ -3,30 +3,26 @@ import { Link } from 'react-router-dom'
 
 export const TCTermsOfService = () => {
   return (
-    <div className='tos-wrapper'>
-      <div>
-        <Link className='tos-wrapper__item--link' to='/home'>
-          Terms of Service
-        </Link>
-        <Link className='tos-wrapper__item--link' to='/home'>
-          Privacy Policy
-        </Link>
-        <Link className='tos-wrapper__item--link' to='/home'>
-          Cookie Policy
-        </Link>
-      </div>
-      <div>
-        <Link className='tos-wrapper__item--link' to='/home'>
-          Accessibility
-        </Link>
-        <Link className='tos-wrapper__item--link' to='/home'>
-          Ads info
-        </Link>
-        <span className='tos-wrapper__item--showMore'>More ···</span>
-      </div>
-      <div>
-        <span className='tos-wrapper__item'>© 2022 Twitter, Inc.</span>
-      </div>
+    <div className='tc-terms-of-service'>
+      <Link className='tc-terms-of-service__link' to='/home'>
+        Terms{'\u00A0'}of{'\u00A0'}Service
+      </Link>
+      <Link className='tc-terms-of-service__link' to='/home'>
+        Privacy{'\u00A0'}Policy
+      </Link>
+      <Link className='tc-terms-of-service__link' to='/home'>
+        Cookie{'\u00A0'}Policy
+      </Link>
+      <Link className='tc-terms-of-service__link' to='/home'>
+        Accessibility
+      </Link>
+      <Link className='tc-terms-of-service__link' to='/home'>
+        Ads{'\u00A0'}info
+      </Link>
+      <span className='tc-terms-of-service__link'>More{'\u00A0'}···</span>
+      <span className='tc-terms-of-service__item'>
+        ©{'\u00A0'}2022{'\u00A0'}Twitter,{'\u00A0'}Inc.
+      </span>
     </div>
   )
 }

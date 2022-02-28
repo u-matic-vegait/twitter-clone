@@ -1,11 +1,11 @@
-import { PopupOption } from '../../model/PopupOption'
+import { ContextMenuItemModel } from '../../model/ContextMenuItemModel'
 
-export const recommendedTrendsPopupOptions: PopupOption[] = [
+export const recommendedTrendsContextMenuItems: ContextMenuItemModel[] = [
   { iconName: 'BsEmojiFrown', text: 'Not interested in this' },
   { iconName: 'BsEmojiFrown', text: 'This trend is harmful or spammy' },
 ]
 
-export const navbarMoreOptions: PopupOption[] = [
+export const navbarMoreOptionsContextMenuItems: ContextMenuItemModel[] = [
   { iconName: 'BiMessageRoundedDetail', text: 'Topics' },
   { iconName: 'BsLightning', text: 'Moments' },
   { iconName: 'IoNewspaperOutline', text: 'Newsletters' },
@@ -18,7 +18,7 @@ export const navbarMoreOptions: PopupOption[] = [
   { iconName: 'IoMan', text: 'Keyboard shortcuts' },
 ]
 
-export const tweetOptions: PopupOption[] = [
+export const tweetContextMenuItems: ContextMenuItemModel[] = [
   { iconName: 'BiMessageRoundedX', text: 'Unfollow Computer programming' },
   { iconName: 'BsEmojiFrown', text: 'Not interested in this Tweet' },
   { iconName: 'HiOutlineUserAdd', text: 'Follow @csaba_kissi' },

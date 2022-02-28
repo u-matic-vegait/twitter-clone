@@ -6,7 +6,11 @@ import { MdOutlineStackedBarChart } from 'react-icons/md'
 import { BsEmojiSmile, BsCalendarPlus } from 'react-icons/bs'
 import { HiOutlineLocationMarker } from 'react-icons/hi'
 import { FaGlobeAmericas } from 'react-icons/fa'
-import { TCButton } from '../../atoms/TCButton/TCButton'
+import {
+  TCButton,
+  TCButtonSize,
+  TCButtonType,
+} from '../../atoms/TCButton/TCButton'
 import { useState } from 'react'
 
 export const TCAddTweet = () => {
@@ -20,15 +24,15 @@ export const TCAddTweet = () => {
   })
 
   return (
-    <div className='at-wrapper'>
-      <div className='at-wrapper__left'>
+    <div className='tc-add-tweet'>
+      <div className='tc-add-tweet__avatar'>
         <img
           src={default_profile_image}
           alt='default_profile_image'
-          className='profile_image'
+          className='tc-add-tweet__avatar__image'
         />
       </div>
-      <div className='at-wrapper__right'>
+      <div className='tc-add-tweet__input'>
         <textarea
           placeholder={`What's happening?`}
           maxLength={280}
@@ -36,29 +40,41 @@ export const TCAddTweet = () => {
           onFocus={() => setInputTouched(true)}
         />
         {inputTouched && (
-          <div className='whoCanReplyWrapper'>
-            <div className='whoCanReply'>
-              <FaGlobeAmericas className='whoCanReply__icon' />
-              <span className='whoCanReply__text'> Everyone can reply </span>
+          <div className='tc-add-tweet__input__privacy'>
+            <div className='tc-add-tweet__input__privacy__who-can-reply'>
+              <FaGlobeAmericas className='tc-add-tweet__input__privacy__who-can-reply__icon' />
+              <span className='tc-add-tweet__input__privacy__who-can-reply__text'>
+                Everyone can reply
+              </span>
             </div>
           </div>
         )}
-        <div className='at-wrapper__right-iconsAndButton'>
-          <div className='iconsWrapper'>
-            <IoImageOutline className='icon' />
-            <AiOutlineFileGif className='icon' />
-            <MdOutlineStackedBarChart className='icon' />
-            <BsEmojiSmile className='icon' />
-            <BsCalendarPlus className='icon' />
-            <HiOutlineLocationMarker className='icon' />
+        <div className='tc-add-tweet__input__options'>
+          <div className='tc-add-tweet__input__options__input-types'>
+            <div className='tc-add-tweet__input__options__input-types__icon-wrapper'>
+              <IoImageOutline className='tc-add-tweet__input__options__input-types__icon' />
+            </div>
+            <div className='tc-add-tweet__input__options__input-types__icon-wrapper'>
+              <AiOutlineFileGif className='tc-add-tweet__input__options__input-types__icon' />
+            </div>
+            <div className='tc-add-tweet__input__options__input-types__icon-wrapper'>
+              <MdOutlineStackedBarChart className='tc-add-tweet__input__options__input-types__icon' />
+            </div>
+            <div className='tc-add-tweet__input__options__input-types__icon-wrapper'>
+              <BsEmojiSmile className='tc-add-tweet__input__options__input-types__icon' />
+            </div>
+            <div className='tc-add-tweet__input__options__input-types__icon-wrapper'>
+              <BsCalendarPlus className='tc-add-tweet__input__options__input-types__icon' />
+            </div>
+            <div className='tc-add-tweet__input__options__input-types__icon-wrapper'>
+              <HiOutlineLocationMarker className='tc-add-tweet__input__options__input-types__icon' />
+            </div>
           </div>
-          <div className='tweetButtonWrapper'>
+          <div className='tc-add-tweet__input__options__post-button'>
             <TCButton
               text='Tweet'
-              backgroundColor='#1d9bf0'
-              color='white'
-              padding='8px 16px'
-              fontSize='16px'
+              type={TCButtonType.PRIMARY}
+              size={TCButtonSize.MD}
             />
           </div>
         </div>
